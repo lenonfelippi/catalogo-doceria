@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-conteudo">
+      <div>
+        <h1 id="loja-nome"></h1>
+        <p id="loja-slogan"></p>
+      </div>
+      <button class="btn-carrinho" id="abrir-carrinho" aria-label="Abrir carrinho">
+        🛒 <span id="contador">0</span>
+      </button>
+    </div>
+    <div class="info-loja">
+      <span id="loja-endereco"></span>
+      <span id="loja-horario"></span>
+    </div>
+  </header>
+
+  <main>
+    <div class="filtros">
+      <input type="search" id="busca" placeholder="Buscar produto...">
+      <div class="categorias" id="categorias"></div>
+    </div>
+
+    <section class="grade" id="produtos"></section>
+    <p class="vazio" id="sem-resultado" hidden>Nenhum produto encontrado.</p>
+  </main>
+
+  <footer class="rodape">
+    Catálogo digital desenvolvido como Projeto de Extensão — Sistemas de Informação
+  </footer>
+
+  <!-- Carrinho -->
+  <div class="fundo" id="fundo" hidden></div>
+  <aside class="carrinho" id="carrinho" aria-hidden="true">
+    <div class="carrinho-topo">
+      <h2>Seu pedido</h2>
+      <button class="fechar" id="fechar-carrinho" aria-label="Fechar">✕</button>
+    </div>
+
+    <ul class="itens" id="itens"></ul>
+    <p class="vazio" id="carrinho-vazio">Seu carrinho está vazio.</p>
+
+    <form class="checkout" id="checkout">
+      <label>Seu nome
+        <input type="text" id="cliente" required placeholder="Ex.: Ana Souza">
+      </label>
+
+      <fieldset>
+        <legend>Como quer receber?</legend>
+        <label class="opcao"><input type="radio" name="entrega" value="retirada" checked> Retirar na loja</label>
+        <label class="opcao"><input type="radio" name="entrega" value="entrega"> Entrega (+ <span id="taxa"></span>)</label>
+      </fieldset>
+
+      <label id="campo-endereco" hidden>Endereço de entrega
+        <input type="text" id="endereco" placeholder="Rua, número, bairro">
+      </label>
+
+      <label>Pagamento
+        <select id="pagamento">
+          <option>Pix</option>
+          <option>Dinheiro</option>
+          <option>Cartão na entrega/retirada</option>
+        </select>
+      </label>
+
+      <label>Observações
+        <textarea id="obs" rows="2" placeholder="Ex.: sem cebola, entregar após 18h"></textarea>
+      </label>
+
+      <div class="total">
+        <span>Total</span>
+        <strong id="total">R$ 0,00</strong>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar pedido pelo WhatsApp</button>
+    </form>
+  </aside>
+
+  <div class="aviso" id="aviso" hidden></div>
+
+  <script src="dados.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

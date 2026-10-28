@@ -1,0 +1,126 @@
+// =============================================================
+// DADOS DO CATÁLOGO
+// Edite este arquivo para trocar a loja, os produtos e os preços.
+// =============================================================
+
+const LOJA = {
+  nome: "Doceria Sabor Caseiro",
+  slogan: "Doces e salgados feitos com carinho, todos os dias",
+  whatsapp: "5546991259998",
+  endereco: "R. Mal. Floriano Peixoto, 78 - Centro",
+  horario: "Seg a Sáb, das 8h às 19h",
+  taxaEntrega: 5.0,
+};
+
+// Para usar fotos reais, coloque a imagem na pasta "img" e preencha
+// o campo imagem, ex.: imagem: "img/bolo-chocolate.jpg".
+const PRODUTOS = [
+  {
+    id: 1,
+    nome: "Bolo de Chocolate",
+    categoria: "Bolos",
+    preco: 45.0,
+    emoji: "🎂",
+    descricao: "Bolo inteiro (1 kg) com cobertura de brigadeiro.",
+    imagem: "",
+  },
+  {
+    id: 2,
+    nome: "Bolo de Cenoura",
+    categoria: "Bolos",
+    preco: 38.0,
+    emoji: "🥕",
+    descricao: "Bolo inteiro (1 kg) com calda de chocolate.",
+    imagem: "",
+  },
+  {
+    id: 3,
+    nome: "Fatia de Torta de Limão",
+    categoria: "Bolos",
+    preco: 12.0,
+    emoji: "🍋",
+    descricao: "Massa crocante, creme de limão e merengue.",
+    imagem: "",
+  },
+  {
+    id: 4,
+    nome: "Brigadeiro Gourmet",
+    categoria: "Docinhos",
+    preco: 3.5,
+    emoji: "🍫",
+    descricao: "Unidade. Chocolate belga com granulado.",
+    imagem: "",
+  },
+  {
+    id: 5,
+    nome: "Beijinho",
+    categoria: "Docinhos",
+    preco: 3.0,
+    emoji: "🥥",
+    descricao: "Unidade. Coco fresco e leite condensado.",
+    imagem: "",
+  },
+  {
+    id: 6,
+    nome: "Cento de Docinhos",
+    categoria: "Docinhos",
+    preco: 150.0,
+    emoji: "🍬",
+    descricao: "100 unidades sortidas para festas.",
+    imagem: "",
+  },
+  {
+    id: 7,
+    nome: "Coxinha de Frango",
+    categoria: "Salgados",
+    preco: 7.0,
+    emoji: "🍗",
+    descricao: "Unidade grande, frango com catupiry.",
+    imagem: "",
+  },
+  {
+    id: 8,
+    nome: "Pão de Queijo",
+    categoria: "Salgados",
+    preco: 2.5,
+    emoji: "🧀",
+    descricao: "Unidade, assado na hora.",
+    imagem: "",
+  },
+  {
+    id: 9,
+    nome: "Cento de Salgados",
+    categoria: "Salgados",
+    preco: 90.0,
+    emoji: "🥟",
+    descricao: "100 mini salgados fritos sortidos.",
+    imagem: "",
+  },
+  {
+    id: 10,
+    nome: "Café Coado",
+    categoria: "Bebidas",
+    preco: 5.0,
+    emoji: "☕",
+    descricao: "Copo de 200 ml.",
+    imagem: "",
+  },
+  {
+    id: 11,
+    nome: "Suco Natural",
+    categoria: "Bebidas",
+    preco: 8.0,
+    emoji: "🧃",
+    descricao: "Laranja, limão ou maracujá. 400 ml.",
+    imagem: "",
+  },
+  {
+    id: 12,
+    nome: "Refrigerante Lata",
+    categoria: "Bebidas",
+    preco: 6.0,
+    emoji: "🥤",
+    descricao: "350 ml, diversos sabores.",
+    imagem: "",
+  },
+];
